@@ -1,0 +1,162 @@
+html, body, .container, #sidebar, #mapContainer{
+  height:100%;
+  margin: 0;
+}
+
+
+.container{
+  display:flex;
+}
+
+.content{
+  margin:25px;
+  /*background:CadetBlue;*/
+  background: Black;
+  /*
+  outline: thin solid #ffff;
+  outline-style: dotted;
+  */
+}
+
+/* id style definition */
+#sidebar{
+  background: black;
+  /*width: 20%;*/
+  width: 320px;
+}
+
+#mapContainer {
+  flex-grow:1; /* to fill the rest of the page */
+}
+
+#info{
+  /*background: DarkBlue;*/
+  background: Black;
+  padding-top:10px;
+  padding-bottom:10px;
+  height:100px;
+}
+
+#name, #address, #chairs {
+  color: White; /*make it according to alcohol yes/no*/
+  font-family:Georgia;
+  font-size: 12px;
+  text-transform: capitalize;
+  margin-left:5px
+}
+
+.subtitle{
+  font-size:20px;
+  margin-top:10px;
+}
+
+/* text */
+h1, p {
+  color:white;
+  /*margin-top:10px;*/
+  margin-left:20px;
+  margin-right:20px;
+  font-family: Georgia;
+}
+h1{
+  padding-bottom:50px;
+}
+p {
+  font-family: Georgia;
+  font-size:15px;
+}
+a {
+  text-decoration: none;
+  font-style:italic;
+  color: steelblue;
+}
+
+
+/* legend */
+.legend-box{
+  margin-top:100px;
+  /*background:DarkSlateGrey;*/
+  background: Black;
+}
+
+.legend {
+  display:flex;
+  margin-left:20px;
+  margin-top:5px;
+  font-family: Georgia;
+  font-size:15px;
+  right: 10px;
+  z-index: 1;
+}
+
+.names{
+  font-size:10px;
+}
+
+.names {
+  width:60%;
+  margin-left:5px;
+  color:white;
+}
+
+.mapboxgl-ctrl-geocoder--input{
+  background-color:black;
+}
+
+.button-container{
+  display:flex;
+  margin-left:20px;
+  margin-bottom:20px;
+  height:35px;
+}
+
+.button{
+  margin-right:5px;
+  background-color:black;
+  border: 1px solid white; /* Green */
+  font-family: Georgia;
+  color:white;
+  border-radius:4px;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.button:active {
+    background-color: white;
+    color: black;
+}
+
+
+
+#type1, #type2, #type3, #type4 {
+  width:10px;
+  border-radius:50%;
+  height:10px;
+  opacity:0.6;
+}
+#type1{
+  background:#faff00;
+}
+#type2{
+  background:#f09835;
+}
+
+
+/*
+.legend p {
+margin: 0 0 10px;
+background-color:grey;
+}
+
+.legend div span {
+display: inline-block;
+height: 10px;
+margin-right: 5px;
+width: 10px;
+}
+*/
